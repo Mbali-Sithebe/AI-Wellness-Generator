@@ -15,7 +15,6 @@ body {
   border: 3px solid #054640; /* solid dark green border */
   border-radius: 20px; /* rounded corners */
   padding: 30px; /* space inside the container */
-  
 }
 
 header {
@@ -53,7 +52,7 @@ form {
 .submit-button {
   margin-left: 10px;
   background-color: #f6e6e9;
-  width: 150px;
+  width: 160px;
   font-size: 16px;
   color: #054640;
   border: none;
@@ -65,12 +64,19 @@ form {
 #quote {
   font-size: 16px;
   background-color: #f6e6e9;
-  padding: 30px;
+  padding: 20px;
   line-height: 2;
   border-left: 3px solid #054640;
   box-shadow: 0px 4px 30px 0px rgba(5, 70, 64, 0.03);
   margin-top: 20px;
   border-radius: 6px;
+}
+
+#quote strong {
+  color: #054640;
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 footer {
