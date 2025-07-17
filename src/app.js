@@ -25,6 +25,10 @@ function generateQuote(event) {
   )}&context=${encodeURIComponent(context)}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayQuote);
+
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<div class="generating">⏳ Generating serenity quotes about ${instructionsInput.value}...</div>`;
 }
 
 let quoteFormElement = document.querySelector("#quote-generator-form");

@@ -72,6 +72,10 @@ form {
   border-radius: 6px;
 }
 
+.hidden {
+  display: none;
+}
+
 #quote strong {
   color: #054640;
   display: block;
@@ -85,4 +89,20 @@ footer {
   font-size: 13px;
   margin-top: 30px;
   color: #054640;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
