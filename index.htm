@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Typewritter-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Refencing CSS-->
     <link rel="stylesheet" href="src/style.css" />
     <title>AI-Wellness-Qoutes</title>
   </head>
@@ -15,7 +20,7 @@
 
       <!-- Creating ChatBot Form -->
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter a wellness topic (e.g., peace, balance, self-care)"
@@ -24,10 +29,10 @@
             autocomplete="off"
             class="instructions"
           />
-          <input type="submit" value="Generate Quote" class="submit-button"/>
+          <input type="submit" value="Generate Quote" class="submit-button" />
         </form>
 
-        <div id="quote">Start your day with a peaceful mind.</div>
+        <div id="quote"></div>
       </main>
 
       <footer>
